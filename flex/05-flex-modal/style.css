@@ -16,10 +16,14 @@ body {
 }
 
 .modal {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 15px;
 }
 
 .icon {
@@ -63,4 +67,25 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+/* || My Styles */
+/* Note: You can give .icon (flex-shrink : 0), so that icon will not smashed by text.
+But I did not use it instead I gave width of 100% which is not better thing to do. */
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.flex.btn {
+  justify-content: flex-start;
+  gap: 5px;
+}
+.w-100 {
+  width: 100%;
+}
+.header strong {
+  font-size: 1.1em;
+}
+.text {
+  margin: 5px 0 10px;
 }
